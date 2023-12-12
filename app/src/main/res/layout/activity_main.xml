@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/dmans_bold"
+            android:text="We just sent an SMS"
+            android:layout_marginBottom="30dp"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginStart="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Enter the security code we sent to "
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3sp"
+                android:gravity="center"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/phoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/code"
+                android:fontFamily="@font/poppins_regular"
+                android:text="8798675466"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Edit"
+            android:textColor="@color/logocolor"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/box1"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/otpfile"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/box2"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/otpfile"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/box3"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/otpfile"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/box4"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/otpfile"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/box5"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/otpfile"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/box6"
+                android:layout_width="49dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/otpfile"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear2"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/txtsms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Didn’t get the code?"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtsms"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Resend it"
+                android:textColor="@color/logocolor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="1dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="45s"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/relative"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/logocolor"
+            android:gravity="center"
+            android:text="Verify OTP"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
